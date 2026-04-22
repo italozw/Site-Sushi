@@ -1,0 +1,62 @@
+.area-carrosel{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.track{
+    display: flex;
+    width: max-content;
+    animation: scroll 13.5s linear infinite;
+    gap: 20px;
+}
+.track img{
+    width: 270px;
+    height: 180px;
+    object-fit: cover;
+}
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-1890px);
+    }
+}
+
+
+
+
+
+.area-carrosel-principal{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.carrosel-principal{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carrosel-principal img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.area-carrosel-principal button{
+    z-index: 12;
+    position: absolute;
+    color: rgb(8, 129, 236);
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 15px;
+    border: none;
+}
+
+
+.area-carrosel-principal button:first-of-type{
+    left: 10px;
+}
+.area-carrosel-principal button:first-of-type{
+    right: 10px;
+}
