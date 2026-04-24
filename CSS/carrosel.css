@@ -15,6 +15,10 @@
     height: 180px;
     object-fit: cover;
 }
+.track:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
 @keyframes scroll{
     from{
         transform: translateX(0);
@@ -24,39 +28,41 @@
     }
 }
 
-
-
-
-
 .area-carrosel-principal{
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 90vh;
+    top: -10px;
     overflow: hidden;
 }
 .carrosel-principal{
     display: flex;
     transition: transform 0.5s ease;
 }
-.carrosel-principal img{
+.slide{
+    min-width: 100%;
+    height: 100%;
+}
+.slide img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 .area-carrosel-principal button{
-    z-index: 12;
+    z-index: 2;
     position: absolute;
-    color: rgb(8, 129, 236);
+    color: rgb(240, 255, 255);
     top: 50%;
     transform: translateY(-50%);
     padding: 10px 15px;
+    background-color: var(--color-primary-6);
     border: none;
 }
 
 
 .area-carrosel-principal button:first-of-type{
-    left: 10px;
+    left: 30px;
 }
-.area-carrosel-principal button:first-of-type{
-    right: 10px;
+.area-carrosel-principal button:last-of-type{
+    right: 30px;
 }
